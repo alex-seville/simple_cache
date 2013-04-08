@@ -1,6 +1,6 @@
 {
-  "name": "simpleCache",
-  "version": "0.0.1",
+  "name": "simple_cache",
+  "version": "0.0.2",
   "description": "Simple cache library",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alex-seville/simpleCache.git"
+    "url": "https://github.com/alex-seville/simple_cache.git"
   },
   "keywords": [
     "cache"
