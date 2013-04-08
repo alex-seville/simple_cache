@@ -1,0 +1,20 @@
+{
+  "name": "simpleCache",
+  "version": "0.0.1",
+  "description": "Simple cache library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alex-seville/simpleCache.git"
+  },
+  "keywords": [
+    "cache"
+  ],
+  "author": "Alex Seville",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "c0b828c4fa71859070ff044148cad17d31237ee7"
+}
