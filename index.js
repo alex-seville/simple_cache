@@ -1,20 +1,20 @@
 var cache={};
 
 module.exports = {
-        checkCache: function(key,cb){
+        checkCache: function(key){
             if (cache[key]){
                 if (new Date().getTime() < cache[key].expires){
-                    console.log("using cache, expires on ",cache[key].expires);
-                    cb(cache[key].html);
-                    return true;
+                    //console.log("using cache, expires on ",cache[key].expires);
+                    return cache[key].value;
                  }else{
-                     console.log("removing cache");
+                     //console.log("cache expired, removing cache");
                      delete cache[key];
                  }
             }
             return null;
         },
         add: function(key,value,expiryDate){
-            cache[key]={html: value,expires: expiryDate || new Date().setHours(new Date().getHours()+1)};
+            //defaults to a one hour expiry
+            cache[key]={value: value,expires: expiryDate || new Date().setHours(new Date().getHours()+1)};
         }
 };
